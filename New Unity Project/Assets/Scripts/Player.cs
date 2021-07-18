@@ -32,16 +32,9 @@ public class Player : MonoBehaviour
     {
         moveInput = Input.GetAxis("Horizontal");
         rb2d.velocity = new Vector2(moveInput * speed, rb2d.velocity.y);
-    }
-
-    void OnTriggerStay2D(Collider2D collider2D)
-    {
-        if(collider2D.gameObject.layer == 7)
+        if(moveInput != 0)
         {
-            if(Input.GetKeyDown(KeyCode.E))
-            {
-                GetComponent<SpriteRenderer>().color = Color.red;
-            }
+            transform.rotation = Quaternion.Euler(0, moveInput > 0 ? 0 : 180, 0);
         }
     }
 
