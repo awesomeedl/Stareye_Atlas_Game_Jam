@@ -8,7 +8,7 @@ public class Arrow : MonoBehaviour
     {
         if(collider2D.gameObject.layer == 9)
         {
-            collider2D.gameObject.GetComponent<Enemy>().Destruct();
+            collider2D.gameObject.GetComponent<Health>().decreaseHealth(1);
         }
         Destroy(gameObject);
     }

@@ -21,7 +21,11 @@ public class Enemy : MonoBehaviour
 
     void FixedUpdate()
     {
-        rb2d.MovePosition(transform.position + (player.transform.position - transform.position).normalized * Time.fixedDeltaTime);
+        Vector3 movement = player.transform.position;
+
+        Vector3 newPosition = new Vector3(movement.x, transform.position.y, transform.position.z);
+
+        transform.position = Vector3.MoveTowards(transform.position, newPosition, Time.fixedDeltaTime * 2);
     }
 
     public void Destruct()
