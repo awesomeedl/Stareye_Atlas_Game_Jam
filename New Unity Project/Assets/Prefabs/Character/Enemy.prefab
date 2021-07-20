@@ -160,7 +160,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c62ceb4d87f4ea14b8cdfc32e08ac012, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementSpeed: 1
+  movementSpeed: 2
   groundCheck: {fileID: 825394621}
   groundCheckDistance: 0.3
   wallCheck: {fileID: 1224196389}

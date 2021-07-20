@@ -11,6 +11,7 @@ public class ArrowTrigger : MonoBehaviour
     {
         if(!finished)
         {
+            GetComponent<Animator>().SetTrigger("Stop");
             StartCoroutine(MoveUpPlatform());
             finished = true;
         }
@@ -21,7 +22,7 @@ public class ArrowTrigger : MonoBehaviour
         float timeElapsed = 0f;
         float duration = 3f;
         Vector3 origPos = platform.transform.position;
-        Vector3 newPos = origPos + new Vector3(0f, 10f, 0f);
+        Vector3 newPos = origPos + new Vector3(0f, 9f, 0f);
 
         while(timeElapsed < duration)
         {

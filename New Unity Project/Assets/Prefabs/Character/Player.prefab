@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 3873874323464655196}
   - component: {fileID: 626910798}
   - component: {fileID: 626910796}
+  - component: {fileID: 626910802}
   m_Layer: 8
   m_Name: Player
   m_TagString: Untagged
@@ -75,7 +76,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -5
   m_Sprite: {fileID: -7881689110524910133, guid: e705ab998e9d85542882db31b2affa2a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -142,9 +143,9 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.007978916, y: 0.031915307}
+  m_Offset: {x: 0.007978916, y: 0.0012038946}
   m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
+    border: {x: 0, y: 0.06, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 0.72, y: 1.97}
     newSize: {x: 1, y: 1}
@@ -153,7 +154,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.56574154, y: 1.7040389}
+  m_Size: {x: 0.56574154, y: 1.7654617}
   m_EdgeRadius: 0
 --- !u!114 &626910796
 MonoBehaviour:
@@ -186,6 +187,21 @@ MonoBehaviour:
   sword_sprite: {fileID: 6264145285303951859, guid: 618a946a4f5204a41af24dac60202969, type: 3}
   sword_attackRange: 1
   sword_animator: {fileID: 1066052850}
+--- !u!114 &626910802
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3873874323464655185}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b4597ab84b8cad4c985e9255468f48e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 3
+  MaxHealth: 3
+  healthIncrement: 1
 --- !u!1 &3873874323785731884
 GameObject:
   m_ObjectHideFlags: 0

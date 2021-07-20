@@ -29,6 +29,7 @@ public class Player : MonoBehaviour
     void Update()
     {
         if(Input.GetKeyDown(KeyCode.Space) && IsGrounded()) {
+            //SoundManager.PlaySound("jump");
             rb2d.velocity = Vector2.up * jumpPower;
         }
     }
