@@ -6,6 +6,18 @@ public class Enemy : MonoBehaviour
 {
     Rigidbody2D rb2d;
     GameObject player;
+
+    bool groundDetected;
+    bool wallDetected;
+    int facingDirection = 1;
+    public float movementSpeed = 5f;
+
+    public Transform groundCheck;
+    public float groundCheckDistance;
+    public Transform wallCheck;
+    public float wallCheckDistance;
+    public LayerMask whatIsGround;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -16,20 +28,40 @@ public class Enemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        Move();   
     }
 
-    void FixedUpdate()
+    void Move()
     {
-        Vector3 movement = player.transform.position;
+        groundDetected = Physics2D.Raycast(groundCheck.position, Vector2.down, groundCheckDistance, whatIsGround);
+        wallDetected = Physics2D.Raycast(wallCheck.position, transform.right, wallCheckDistance, whatIsGround);
 
-        Vector3 newPosition = new Vector3(movement.x, transform.position.y, transform.position.z);
+        if(!groundDetected || wallDetected)
+        {
+            //Debug.Log("Flipping");
+            Flip();
+        }
+        else
+        {
+            rb2d.velocity = new Vector2(movementSpeed * facingDirection, rb2d.velocity.y);
+        }
+    }
 
-        transform.position = Vector3.MoveTowards(transform.position, newPosition, Time.fixedDeltaTime * 2);
+    void Flip()
+    {
+        facingDirection *= -1;
+        transform.Rotate(0.0f, 180.0f, 0.0f);
+
     }
 
     public void Destruct()
     {
         Destroy(gameObject);
+    }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.DrawLine(groundCheck.position, new Vector2(groundCheck.position.x, groundCheck.position.y - groundCheckDistance));
+        Gizmos.DrawLine(wallCheck.position, new Vector2(wallCheck.position.x + wallCheckDistance, wallCheck.position.y));
     }
 }

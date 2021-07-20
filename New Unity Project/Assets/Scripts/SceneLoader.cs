@@ -22,7 +22,7 @@ public class SceneLoader : MonoBehaviour
 
     public void LoadMenu()
     {
-        //SceneManager.LoadScene("StartMenu");
+        SceneManager.LoadScene(0);
     }
 
     public void LoadLevelSelection()
@@ -32,12 +32,12 @@ public class SceneLoader : MonoBehaviour
 
     public void LoadGameOver()
     {
-        //SceneManager.LoadScene("GameOver");
+        SceneManager.LoadScene(2);
     }
 
     public void LoadLevel1()
     {
-        //SceneManager.LoadScene("Level1");
+        SceneManager.LoadScene(1);
     }
 
     public void Quit()
