@@ -17,10 +17,7 @@ public class Health : MonoBehaviour
 
     void Update()
     {
-        if(isDead())
-        {
-            Destroy(gameObject);
-        }
+        
     }
 
     public void SetHealth(int health)

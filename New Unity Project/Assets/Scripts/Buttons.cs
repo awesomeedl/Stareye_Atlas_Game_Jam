@@ -9,7 +9,7 @@ public class Buttons : MonoBehaviour
         SceneLoader.instance.Quit();
     }
 
-    public void Start()
+    public void LoadStart()
     {
         SceneLoader.instance.LoadLevel1();
     }

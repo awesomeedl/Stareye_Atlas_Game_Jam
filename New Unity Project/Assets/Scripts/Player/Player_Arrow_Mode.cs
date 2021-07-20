@@ -17,7 +17,7 @@ public partial class Player_Mode
         {
             if(Input.GetKey(KeyCode.Q))
             {
-                GameObject a = Instantiate(arrowPrefab, attackPos.position, Quaternion.identity);
+                GameObject a = Instantiate(arrowPrefab, attackPos.position + new Vector3(0, 1, 0), Quaternion.identity);
                 a.transform.up = transform.right;
                 a.GetComponent<Rigidbody2D>().velocity = transform.right * 20;
                 arrow_timeBtwAttack = arrow_startTimeBtwAttack;
