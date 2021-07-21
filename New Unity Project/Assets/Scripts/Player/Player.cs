@@ -23,6 +23,8 @@ public class Player : MonoBehaviour
         health = GetComponent<Health>();
         rb2d = GetComponent<Rigidbody2D>();
         boxCollider2D = transform.GetComponent<BoxCollider2D>();
+
+        GetComponent<DialogueTrigger>().TriggerDialogue();
     }
     
     // Update is called once per frame

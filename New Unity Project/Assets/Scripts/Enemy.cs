@@ -7,6 +7,8 @@ public class Enemy : MonoBehaviour
     Rigidbody2D rb2d;
     GameObject player;
 
+
+    public Collider2D capCollider;
     bool groundDetected;
     bool wallDetected;
     int facingDirection = 1;
@@ -26,7 +28,7 @@ public class Enemy : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         Move();   
     }
@@ -36,15 +38,24 @@ public class Enemy : MonoBehaviour
         groundDetected = Physics2D.Raycast(groundCheck.position, Vector2.down, groundCheckDistance, whatIsGround);
         wallDetected = Physics2D.Raycast(wallCheck.position, transform.right, wallCheckDistance, whatIsGround);
 
-        if(!groundDetected || wallDetected)
+        if(IsGrounded())
         {
-            //Debug.Log("Flipping");
-            Flip();
+            if(!groundDetected || wallDetected)
+            {
+                Flip();
+            }
+            else
+            {
+                rb2d.velocity = new Vector2(movementSpeed * facingDirection, rb2d.velocity.y);
+                rb2d.AddForce(Vector2.up * 3f, ForceMode2D.Impulse);
+            }
         }
-        else
-        {
-            rb2d.velocity = new Vector2(movementSpeed * facingDirection, rb2d.velocity.y);
-        }
+    }
+
+    bool IsGrounded()
+    {
+        RaycastHit2D hit = Physics2D.BoxCast(capCollider.bounds.center, capCollider.bounds.size, 0, Vector2.down, 0.1f, whatIsGround);
+        return (hit.collider != null);
     }
 
     void Flip()
