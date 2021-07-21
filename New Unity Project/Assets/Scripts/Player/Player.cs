@@ -21,10 +21,8 @@ public class Player : MonoBehaviour
         heartDisplay = FindObjectOfType<HeartDisplay>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         health = GetComponent<Health>();
-        rb2d = GetComponent<Rigidbody2D>();
+        rb2d = GetComponent<Rigidbody2D>(); 
         boxCollider2D = transform.GetComponent<BoxCollider2D>();
-
-        GetComponent<DialogueTrigger>().TriggerDialogue();
     }
     
     // Update is called once per frame
