@@ -127,10 +127,10 @@ GameObject:
   m_Component:
   - component: {fileID: 5463024780485961881}
   - component: {fileID: 5463024780485961894}
-  - component: {fileID: 5463024780485961895}
   - component: {fileID: 5463024780485961880}
   - component: {fileID: 693642789}
   - component: {fileID: 8088336360799473229}
+  - component: {fileID: 1525931246952617456}
   m_Layer: 9
   m_Name: Enemy
   m_TagString: Untagged
@@ -206,27 +206,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &5463024780485961895
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5463024780485961893}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c62ceb4d87f4ea14b8cdfc32e08ac012, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  capCollider: {fileID: 8088336360799473229}
-  movementSpeed: 2
-  groundCheck: {fileID: 825394621}
-  groundCheckDistance: 0.3
-  wallCheck: {fileID: 1224196389}
-  wallCheckDistance: 0.1
-  whatIsGround:
-    serializedVersion: 2
-    m_Bits: 64
 --- !u!50 &5463024780485961880
 Rigidbody2D:
   serializedVersion: 4
@@ -279,3 +258,24 @@ CapsuleCollider2D:
   m_Offset: {x: 0.14376475, y: -0.027494362}
   m_Size: {x: 2.4684145, y: 0.9631453}
   m_Direction: 1
+--- !u!114 &1525931246952617456
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5463024780485961893}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0899a7140dd5ce4992993fd1996c714, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  capCollider: {fileID: 8088336360799473229}
+  movementSpeed: 2
+  groundCheck: {fileID: 825394621}
+  groundCheckDistance: 0.3
+  wallCheck: {fileID: 1224196389}
+  wallCheckDistance: 0.1
+  whatIsGround:
+    serializedVersion: 2
+    m_Bits: 64

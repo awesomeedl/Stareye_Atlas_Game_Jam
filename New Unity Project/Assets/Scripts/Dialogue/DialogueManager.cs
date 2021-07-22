@@ -11,24 +11,34 @@ public class DialogueManager : MonoBehaviour {
 	public Animator animator;
 
 	private Queue<string> sentences;
+	private Queue<Sprite> icons;
+
+	public bool started = false;
 
 	// Use this for initialization
 	void Start () {
 		sentences = new Queue<string>();
+		icons = new Queue<Sprite>();
 	}
 
 	public void StartDialogue (Dialogue dialogue)
 	{
+		started = true;
 		Time.timeScale = 0;
 		animator.SetBool("IsOpen", true);
 
-		characterImage.sprite = dialogue.character;
-
+		
+		icons.Clear();
 		sentences.Clear();
 
 		foreach (string sentence in dialogue.sentences)
 		{
 			sentences.Enqueue(sentence);
+		}
+
+		foreach (Sprite icon in dialogue.icons)
+		{
+			icons.Enqueue(icon);
 		}
 
 		DisplayNextSentence();
@@ -43,6 +53,9 @@ public class DialogueManager : MonoBehaviour {
 		}
 
 		string sentence = sentences.Dequeue();
+		Sprite icon = icons.Dequeue();
+		characterImage.sprite = icon;
+
 		StopAllCoroutines();
 		StartCoroutine(TypeSentence(sentence));
 	}
@@ -59,6 +72,7 @@ public class DialogueManager : MonoBehaviour {
 
 	void EndDialogue()
 	{
+		started = false;
 		Time.timeScale = 1;
 		animator.SetBool("IsOpen", false);
 	}

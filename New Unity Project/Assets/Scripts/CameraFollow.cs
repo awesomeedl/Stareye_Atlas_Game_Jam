@@ -6,6 +6,8 @@ public class CameraFollow : MonoBehaviour
 {   
     [Header("Camera Follow")]
     [SerializeField] GameObject followObject;
+    [SerializeField] bool followY;
+    [SerializeField] float yOffset;
     public GameObject cam;
     // [Header("Camera Shake")]
     // public float duration = 0.1f;
@@ -48,6 +50,10 @@ public class CameraFollow : MonoBehaviour
 
         Vector3 newPosition = transform.position;
         newPosition.x = follow.x;
+        if(followY)
+        {
+            newPosition.y = follow.y + yOffset;
+        }
 
         cam.transform.position = newPosition;
     }

@@ -13,6 +13,8 @@ public partial class Player_Mode : MonoBehaviour
     public LayerMask whatIsEnemies;
     public LayerMask whatIsChild;
 
+    [SerializeField] RuntimeAnimatorController[] controllers;
+
     [SerializeField] GameObject currentBuff;
     
     // State machine
@@ -93,11 +95,13 @@ public partial class Player_Mode : MonoBehaviour
                 attackMode = AttackMode.Arrow;
                 weaponSprite.sprite = bow_sprite;
                 GetComponent<SpriteRenderer>().sprite = sprites[1];
+                GetComponent<Animator>().runtimeAnimatorController = controllers[1];
                 break;
             case Child.Buff_Type.Sword:
                 attackMode = AttackMode.Sword;
                 weaponSprite.sprite = sword_sprite;
                 GetComponent<SpriteRenderer>().sprite = sprites[2];
+                GetComponent<Animator>().runtimeAnimatorController = controllers[2];
                 break;
             case Child.Buff_Type.Staff:
                 attackMode = AttackMode.Staff;
@@ -124,6 +128,7 @@ public partial class Player_Mode : MonoBehaviour
             attackMode = AttackMode.Empty;
             weaponSprite.sprite = null;
             GetComponent<SpriteRenderer>().sprite = sprites[0];
+            GetComponent<Animator>().runtimeAnimatorController = controllers[0];
         }
     }
 

@@ -16,21 +16,39 @@ public class Player : MonoBehaviour
     [SerializeField] private LayerMask platformsLayerMask;
     [SerializeField] private LayerMask childLayerMask;
 
+    Animator animator;
+
     void Start()
     {
+        animator = GetComponent<Animator>();
         heartDisplay = FindObjectOfType<HeartDisplay>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         health = GetComponent<Health>();
         rb2d = GetComponent<Rigidbody2D>(); 
         boxCollider2D = transform.GetComponent<BoxCollider2D>();
+
+        StartCoroutine(BeginningDialogue());
+    }
+
+    IEnumerator BeginningDialogue()
+    {
+        yield return null;
+        GetComponent<DialogueTrigger>().TriggerDialogue();
     }
     
     // Update is called once per frame
     void Update()
     {
+        // if(!grounded && IsGrounded())
+        // {
+        //     grounded = true;
+        //     animator.SetBool("jumping", false);
+        // }
         if(Input.GetKeyDown(KeyCode.Space) && IsGrounded()) {
             //SoundManager.PlaySound("jump");
             rb2d.velocity = Vector2.up * jumpPower;
+            // animator.SetBool("jumping", true);
+            // grounded = false;
         }
     }
 
@@ -40,7 +58,12 @@ public class Player : MonoBehaviour
         rb2d.velocity = new Vector2(moveInput * speed, rb2d.velocity.y);
         if(moveInput != 0)
         {
+            animator.SetBool("walking", true);
             transform.rotation = Quaternion.Euler(0, moveInput > 0 ? 0 : 180, 0);
+        }
+        else
+        {
+            animator.SetBool("walking", false);
         }
     }
 

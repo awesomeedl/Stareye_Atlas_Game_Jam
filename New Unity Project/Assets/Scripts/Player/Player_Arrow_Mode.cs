@@ -8,7 +8,7 @@ public partial class Player_Mode
     [SerializeField] Sprite bow_sprite;
     [SerializeField] GameObject arrowPrefab;
     float arrow_timeBtwAttack = 0;
-    float arrow_startTimeBtwAttack = 0.3f;
+    float arrow_startTimeBtwAttack = 1f;
 
 
     private void ServiceArrowMode()
