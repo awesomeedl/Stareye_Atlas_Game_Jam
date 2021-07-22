@@ -2796,7 +2796,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 345.9, y: -45}
-  m_SizeDelta: {x: 90, y: 20}
+  m_SizeDelta: {x: 180, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &712281132
 MonoBehaviour:
@@ -2887,7 +2887,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: CONTINUE
+  m_Text: CONTINUE (Press Space)
 --- !u!222 &712281134
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4040,7 +4040,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -400, y: -0.70000076}
+  m_AnchoredPosition: {x: -387, y: -0.70000076}
   m_SizeDelta: {x: 80, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &997247187
@@ -4882,7 +4882,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -400, y: -0.70000076}
+  m_AnchoredPosition: {x: -387, y: -0.70000076}
   m_SizeDelta: {x: 95, y: 95}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1254070125
@@ -8256,6 +8256,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 626910803, guid: 50ae98ca30e25cb4cba0dc14c56c2fd6, type: 3}
+      propertyPath: dialogue.icons.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 626910803, guid: 50ae98ca30e25cb4cba0dc14c56c2fd6, type: 3}
+      propertyPath: dialogue.icons.Array.data[0]
+      value: 
+      objectReference: {fileID: 21300000, guid: 80afe52afc9eead4989751454871a361, type: 3}
+    - target: {fileID: 626910803, guid: 50ae98ca30e25cb4cba0dc14c56c2fd6, type: 3}
+      propertyPath: dialogue.icons.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300000, guid: 80afe52afc9eead4989751454871a361, type: 3}
     - target: {fileID: 3873874323464655185, guid: 50ae98ca30e25cb4cba0dc14c56c2fd6, type: 3}
       propertyPath: m_Name
       value: Player
@@ -8427,6 +8439,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 51748887, guid: ad9d380a21f8f164884738b6e1b4a358, type: 3}
+      propertyPath: dialogue.icons.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 51748887, guid: ad9d380a21f8f164884738b6e1b4a358, type: 3}
+      propertyPath: dialogue.icons.Array.data[0]
+      value: 
+      objectReference: {fileID: 21300000, guid: 010f3b3086c9a5048ae2f436d9df3c2a, type: 3}
+    - target: {fileID: 51748887, guid: ad9d380a21f8f164884738b6e1b4a358, type: 3}
+      propertyPath: dialogue.icons.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300000, guid: 12f204c0f9be3724da1994b2300f53fa, type: 3}
+    - target: {fileID: 51748887, guid: ad9d380a21f8f164884738b6e1b4a358, type: 3}
+      propertyPath: dialogue.icons.Array.data[2]
+      value: 
+      objectReference: {fileID: 21300000, guid: 71e21f22c77b6674fa85f0230afcf42a, type: 3}
+    - target: {fileID: 51748887, guid: ad9d380a21f8f164884738b6e1b4a358, type: 3}
+      propertyPath: dialogue.icons.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: 71e21f22c77b6674fa85f0230afcf42a, type: 3}
     - target: {fileID: 6526100457381698818, guid: ad9d380a21f8f164884738b6e1b4a358, type: 3}
       propertyPath: m_Name
       value: Arrow_Child
