@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class Ending : MonoBehaviour
 {
+    public GameObject disableHeart;
     DialogueManager dialogueManager;
     DialogueTrigger dialogueTrigger;
     public Image image;
@@ -22,6 +23,7 @@ public class Ending : MonoBehaviour
 
     IEnumerator cEnd()
     {
+        disableHeart.SetActive(false);
         float time = 0f;
         float endTime = 5f;
         float transparency;

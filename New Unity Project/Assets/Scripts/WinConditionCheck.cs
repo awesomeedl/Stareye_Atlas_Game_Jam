@@ -39,6 +39,10 @@ public class WinConditionCheck : MonoBehaviour
                 }
                 StartCoroutine(DelayLoadNext());
             }
+            if(dialogueTrigger == null)
+            {
+                StartCoroutine(DelayLoadNext());
+            }
         }
     }
 
