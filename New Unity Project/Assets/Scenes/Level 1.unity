@@ -2143,7 +2143,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -686960885
-  m_SortingLayer: -1
+  m_SortingLayer: -2
   m_SortingOrder: 0
   m_Sprite: {fileID: -4096148848442724135, guid: a4e5484a909faaf4d979fb5f8d37db8a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -6859,7 +6859,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -686960885
-  m_SortingLayer: -1
+  m_SortingLayer: -2
   m_SortingOrder: 4
   m_Sprite: {fileID: -51067996472783553, guid: ea3022f162cadd74c865c4f1016c268b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -8018,7 +8018,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -686960885
-  m_SortingLayer: -1
+  m_SortingLayer: -2
   m_SortingOrder: 4
   m_Sprite: {fileID: 5355278305407176838, guid: ea3022f162cadd74c865c4f1016c268b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -8706,6 +8706,16 @@ PrefabInstance:
       propertyPath: cooldownBar
       value: 
       objectReference: {fileID: 1890345725}
+    - target: {fileID: 626910803, guid: 50ae98ca30e25cb4cba0dc14c56c2fd6, type: 3}
+      propertyPath: dialogue.sentences.Array.data[0]
+      value: 'What''s on the wall?
+
+        Maybe I should take a look at it.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 626910803, guid: 50ae98ca30e25cb4cba0dc14c56c2fd6, type: 3}
+      propertyPath: dialogue.sentences.Array.data[1]
+      value: Hold on, something doesn't feel right...
+      objectReference: {fileID: 0}
     - target: {fileID: 3873874323464655185, guid: 50ae98ca30e25cb4cba0dc14c56c2fd6, type: 3}
       propertyPath: m_Name
       value: Player
@@ -8984,24 +8994,159 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 51748887, guid: ad9d380a21f8f164884738b6e1b4a358, type: 3}
       propertyPath: dialogue.icons.Array.size
-      value: 4
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 51748887, guid: ad9d380a21f8f164884738b6e1b4a358, type: 3}
       propertyPath: dialogue.icons.Array.data[0]
       value: 
-      objectReference: {fileID: 21300000, guid: 010f3b3086c9a5048ae2f436d9df3c2a, type: 3}
+      objectReference: {fileID: 21300000, guid: 12f204c0f9be3724da1994b2300f53fa, type: 3}
     - target: {fileID: 51748887, guid: ad9d380a21f8f164884738b6e1b4a358, type: 3}
       propertyPath: dialogue.icons.Array.data[1]
       value: 
-      objectReference: {fileID: 21300000, guid: 12f204c0f9be3724da1994b2300f53fa, type: 3}
+      objectReference: {fileID: 21300000, guid: 80afe52afc9eead4989751454871a361, type: 3}
     - target: {fileID: 51748887, guid: ad9d380a21f8f164884738b6e1b4a358, type: 3}
       propertyPath: dialogue.icons.Array.data[2]
       value: 
-      objectReference: {fileID: 21300000, guid: 71e21f22c77b6674fa85f0230afcf42a, type: 3}
+      objectReference: {fileID: 21300000, guid: 61f7c0b9f8e1bff4b81f237e2b198dcd, type: 3}
     - target: {fileID: 51748887, guid: ad9d380a21f8f164884738b6e1b4a358, type: 3}
       propertyPath: dialogue.icons.Array.data[3]
       value: 
+      objectReference: {fileID: 21300000, guid: 80afe52afc9eead4989751454871a361, type: 3}
+    - target: {fileID: 51748887, guid: ad9d380a21f8f164884738b6e1b4a358, type: 3}
+      propertyPath: dialogue.icons.Array.data[4]
+      value: 
       objectReference: {fileID: 21300000, guid: 71e21f22c77b6674fa85f0230afcf42a, type: 3}
+    - target: {fileID: 51748887, guid: ad9d380a21f8f164884738b6e1b4a358, type: 3}
+      propertyPath: dialogue.icons.Array.data[5]
+      value: 
+      objectReference: {fileID: 21300000, guid: 80afe52afc9eead4989751454871a361, type: 3}
+    - target: {fileID: 51748887, guid: ad9d380a21f8f164884738b6e1b4a358, type: 3}
+      propertyPath: dialogue.icons.Array.data[6]
+      value: 
+      objectReference: {fileID: 21300000, guid: 010f3b3086c9a5048ae2f436d9df3c2a, type: 3}
+    - target: {fileID: 51748887, guid: ad9d380a21f8f164884738b6e1b4a358, type: 3}
+      propertyPath: dialogue.icons.Array.data[7]
+      value: 
+      objectReference: {fileID: 21300000, guid: 80afe52afc9eead4989751454871a361, type: 3}
+    - target: {fileID: 51748887, guid: ad9d380a21f8f164884738b6e1b4a358, type: 3}
+      propertyPath: dialogue.icons.Array.data[8]
+      value: 
+      objectReference: {fileID: 21300000, guid: 71e21f22c77b6674fa85f0230afcf42a, type: 3}
+    - target: {fileID: 51748887, guid: ad9d380a21f8f164884738b6e1b4a358, type: 3}
+      propertyPath: dialogue.icons.Array.data[9]
+      value: 
+      objectReference: {fileID: 21300000, guid: 80afe52afc9eead4989751454871a361, type: 3}
+    - target: {fileID: 51748887, guid: ad9d380a21f8f164884738b6e1b4a358, type: 3}
+      propertyPath: dialogue.icons.Array.data[10]
+      value: 
+      objectReference: {fileID: 21300000, guid: 80afe52afc9eead4989751454871a361, type: 3}
+    - target: {fileID: 51748887, guid: ad9d380a21f8f164884738b6e1b4a358, type: 3}
+      propertyPath: dialogue.icons.Array.data[11]
+      value: 
+      objectReference: {fileID: 21300000, guid: 80afe52afc9eead4989751454871a361, type: 3}
+    - target: {fileID: 51748887, guid: ad9d380a21f8f164884738b6e1b4a358, type: 3}
+      propertyPath: dialogue.icons.Array.data[12]
+      value: 
+      objectReference: {fileID: 21300000, guid: 508d8cc9affecd247898b8e8b419511c, type: 3}
+    - target: {fileID: 51748887, guid: ad9d380a21f8f164884738b6e1b4a358, type: 3}
+      propertyPath: dialogue.icons.Array.data[13]
+      value: 
+      objectReference: {fileID: 21300000, guid: 80afe52afc9eead4989751454871a361, type: 3}
+    - target: {fileID: 51748887, guid: ad9d380a21f8f164884738b6e1b4a358, type: 3}
+      propertyPath: dialogue.icons.Array.data[14]
+      value: 
+      objectReference: {fileID: 21300000, guid: dd23f4bae0476964f848b75120842ad6, type: 3}
+    - target: {fileID: 51748887, guid: ad9d380a21f8f164884738b6e1b4a358, type: 3}
+      propertyPath: dialogue.icons.Array.data[15]
+      value: 
+      objectReference: {fileID: 21300000, guid: cfd4e90f9efe0624b9ee39b977051ac8, type: 3}
+    - target: {fileID: 51748887, guid: ad9d380a21f8f164884738b6e1b4a358, type: 3}
+      propertyPath: dialogue.icons.Array.data[16]
+      value: 
+      objectReference: {fileID: 21300000, guid: 80afe52afc9eead4989751454871a361, type: 3}
+    - target: {fileID: 51748887, guid: ad9d380a21f8f164884738b6e1b4a358, type: 3}
+      propertyPath: dialogue.icons.Array.data[17]
+      value: 
+      objectReference: {fileID: 21300000, guid: dd9596ca97f43704f80fb3aa2b8aba09, type: 3}
+    - target: {fileID: 51748887, guid: ad9d380a21f8f164884738b6e1b4a358, type: 3}
+      propertyPath: dialogue.sentences.Array.size
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 51748887, guid: ad9d380a21f8f164884738b6e1b4a358, type: 3}
+      propertyPath: dialogue.sentences.Array.data[0]
+      value: Hey, can you give me a lift, please?
+      objectReference: {fileID: 0}
+    - target: {fileID: 51748887, guid: ad9d380a21f8f164884738b6e1b4a358, type: 3}
+      propertyPath: dialogue.sentences.Array.data[1]
+      value: "What\u2019s wrong?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 51748887, guid: ad9d380a21f8f164884738b6e1b4a358, type: 3}
+      propertyPath: dialogue.sentences.Array.data[2]
+      value: "My legs got injured while I\u2019m hunting those piggy bugs."
+      objectReference: {fileID: 0}
+    - target: {fileID: 51748887, guid: ad9d380a21f8f164884738b6e1b4a358, type: 3}
+      propertyPath: dialogue.sentences.Array.data[3]
+      value: Piggy what?
+      objectReference: {fileID: 0}
+    - target: {fileID: 51748887, guid: ad9d380a21f8f164884738b6e1b4a358, type: 3}
+      propertyPath: dialogue.sentences.Array.data[4]
+      value: I need to find Gram Gram. Can you carry me to her?
+      objectReference: {fileID: 0}
+    - target: {fileID: 51748887, guid: ad9d380a21f8f164884738b6e1b4a358, type: 3}
+      propertyPath: dialogue.sentences.Array.data[5]
+      value: How am I supposed to carry you with all these monsters around?
+      objectReference: {fileID: 0}
+    - target: {fileID: 51748887, guid: ad9d380a21f8f164884738b6e1b4a358, type: 3}
+      propertyPath: dialogue.sentences.Array.data[6]
+      value: 'I can fight on your shoulders with my arrows.
+
+        (Press Q to
+        attack)'
+      objectReference: {fileID: 0}
+    - target: {fileID: 51748887, guid: ad9d380a21f8f164884738b6e1b4a358, type: 3}
+      propertyPath: dialogue.sentences.Array.data[7]
+      value: "I\u2019m not sure about this."
+      objectReference: {fileID: 0}
+    - target: {fileID: 51748887, guid: ad9d380a21f8f164884738b6e1b4a358, type: 3}
+      propertyPath: dialogue.sentences.Array.data[8]
+      value: I will cook you some good food in exchange for your help.
+      objectReference: {fileID: 0}
+    - target: {fileID: 51748887, guid: ad9d380a21f8f164884738b6e1b4a358, type: 3}
+      propertyPath: dialogue.sentences.Array.data[9]
+      value: "Sigh\u2026 Alright."
+      objectReference: {fileID: 0}
+    - target: {fileID: 51748887, guid: ad9d380a21f8f164884738b6e1b4a358, type: 3}
+      propertyPath: dialogue.sentences.Array.data[10]
+      value: "Before we go, I want to ask one more thing\u2026"
+      objectReference: {fileID: 0}
+    - target: {fileID: 51748887, guid: ad9d380a21f8f164884738b6e1b4a358, type: 3}
+      propertyPath: dialogue.sentences.Array.data[11]
+      value: Why are you hunting those things?
+      objectReference: {fileID: 0}
+    - target: {fileID: 51748887, guid: ad9d380a21f8f164884738b6e1b4a358, type: 3}
+      propertyPath: dialogue.sentences.Array.data[12]
+      value: To eat, of course.
+      objectReference: {fileID: 0}
+    - target: {fileID: 51748887, guid: ad9d380a21f8f164884738b6e1b4a358, type: 3}
+      propertyPath: dialogue.sentences.Array.data[13]
+      value: "Umm\u2026do those things\u2026\u2026taste good?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 51748887, guid: ad9d380a21f8f164884738b6e1b4a358, type: 3}
+      propertyPath: dialogue.sentences.Array.data[14]
+      value: 'A gourmand, I see. I can let you try some after we find Gram Gram. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 51748887, guid: ad9d380a21f8f164884738b6e1b4a358, type: 3}
+      propertyPath: dialogue.sentences.Array.data[15]
+      value: "Don\u2019t expect much though, I also need some myself."
+      objectReference: {fileID: 0}
+    - target: {fileID: 51748887, guid: ad9d380a21f8f164884738b6e1b4a358, type: 3}
+      propertyPath: dialogue.sentences.Array.data[16]
+      value: "How generous of you\u2026"
+      objectReference: {fileID: 0}
+    - target: {fileID: 51748887, guid: ad9d380a21f8f164884738b6e1b4a358, type: 3}
+      propertyPath: dialogue.sentences.Array.data[17]
+      value: '?'
+      objectReference: {fileID: 0}
     - target: {fileID: 6526100457381698818, guid: ad9d380a21f8f164884738b6e1b4a358, type: 3}
       propertyPath: m_Name
       value: Arrow_Child
