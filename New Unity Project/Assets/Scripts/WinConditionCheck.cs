@@ -5,7 +5,7 @@ using UnityEngine;
 public class WinConditionCheck : MonoBehaviour
 {
     BoxCollider2D boxCollider2D;
-
+    public Animator transionAnim;
     private Child[] allChild;
     // Start is called before the first frame update
     void Start()
@@ -26,6 +26,8 @@ public class WinConditionCheck : MonoBehaviour
     IEnumerator DelayLoadNext()
     {
         yield return new WaitForSeconds(2);
+        transionAnim.SetTrigger("fadeOut");
+        yield return new WaitForSeconds(1);
         SceneLoader.instance.LoadNextLevel();
     }
 
