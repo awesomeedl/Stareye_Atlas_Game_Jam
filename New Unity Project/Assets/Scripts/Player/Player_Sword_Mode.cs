@@ -7,10 +7,11 @@ public partial class Player_Mode
     [Header("Sword")]
     public Sprite sword_sprite;
     float sword_timeBtwAttack = 0;
-    float sword_startTimeBtwAttack = 0.3f;
+    float sword_startTimeBtwAttack = 0.5f;
 
     public float sword_attackRange;
     public Animator sword_animator;
+    public AudioClip sword_swing;
 
     private void ServiceSwordMode()
     {
@@ -18,6 +19,7 @@ public partial class Player_Mode
         {
             if(Input.GetKey(KeyCode.Q))
             {
+                audioSource.PlayOneShot(sword_swing);
                 Collider2D[] enemiesToDamage = Physics2D.OverlapCircleAll(attackPos.position, sword_attackRange, whatIsEnemies);
                 for(int i = 0; i < enemiesToDamage.Length; i++)
                 {
@@ -33,5 +35,12 @@ public partial class Player_Mode
         {
             sword_timeBtwAttack -= Time.deltaTime;
         }
+        cooldownBar.value = 1 - sword_timeBtwAttack / sword_startTimeBtwAttack;
+    }
+
+        void OnDrawGizmos()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(attackPos.position, sword_attackRange);
     }
 }

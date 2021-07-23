@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
+    public AudioClip hurtSound;
+    AudioSource audioSource;
     protected Rigidbody2D rb2d;
     protected GameObject player;
     
@@ -12,6 +14,7 @@ public class Enemy : MonoBehaviour
     {
         rb2d = GetComponent<Rigidbody2D>();
         player = FindObjectOfType<Player>().gameObject;
+        audioSource = player.GetComponent<AudioSource>();
     }
     
     public void Destruct()
@@ -23,6 +26,7 @@ public class Enemy : MonoBehaviour
     {
         if(collider2D.gameObject.layer == 10)
         {
+            audioSource.PlayOneShot(hurtSound);
             Health enemyHealth;
             if(TryGetComponent<Health>(out enemyHealth))
             {

@@ -9,6 +9,11 @@ public class Buttons : MonoBehaviour
         SceneLoader.instance.Quit();
     }
 
+    public void Retry()
+    {
+        SceneLoader.instance.Retry();
+    }
+
     public void LoadStart()
     {
         SceneLoader.instance.LoadLevel1();

@@ -5,6 +5,7 @@ using UnityEngine;
 public class Arrow : MonoBehaviour
 {
     Rigidbody2D rb2d;
+
     void OnTriggerEnter2D(Collider2D collider2D)
     {
         Destroy(gameObject);

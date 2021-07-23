@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public partial class Player_Mode : MonoBehaviour
 {
@@ -12,6 +13,8 @@ public partial class Player_Mode : MonoBehaviour
     public SpriteRenderer weaponSprite;
     public LayerMask whatIsEnemies;
     public LayerMask whatIsChild;
+    public Slider cooldownBar;
+    public AudioSource audioSource;
 
     [SerializeField] RuntimeAnimatorController[] controllers;
 
@@ -37,12 +40,14 @@ public partial class Player_Mode : MonoBehaviour
             if(buffAvailable.Length > 0 && currentBuff == null)
             {
                 PickUpBuff(buffAvailable[0].gameObject);
+                cooldownBar.gameObject.SetActive(true);
             }
             else
             {
                 if(buffAvailable.Length <= 1)
                 {
                     DropCurrentBuff();
+                    cooldownBar.gameObject.SetActive(false);
                 }
                 else
                 {
@@ -94,13 +99,11 @@ public partial class Player_Mode : MonoBehaviour
             case Child.Buff_Type.Arrow:
                 attackMode = AttackMode.Arrow;
                 weaponSprite.sprite = bow_sprite;
-                GetComponent<SpriteRenderer>().sprite = sprites[1];
                 GetComponent<Animator>().runtimeAnimatorController = controllers[1];
                 break;
             case Child.Buff_Type.Sword:
                 attackMode = AttackMode.Sword;
                 weaponSprite.sprite = sword_sprite;
-                GetComponent<SpriteRenderer>().sprite = sprites[2];
                 GetComponent<Animator>().runtimeAnimatorController = controllers[2];
                 break;
             case Child.Buff_Type.Staff:
@@ -127,16 +130,11 @@ public partial class Player_Mode : MonoBehaviour
 
             attackMode = AttackMode.Empty;
             weaponSprite.sprite = null;
-            GetComponent<SpriteRenderer>().sprite = sprites[0];
             GetComponent<Animator>().runtimeAnimatorController = controllers[0];
         }
     }
 
 
-    void OnDrawGizmos()
-    {
-        Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(transform.position, 1);
-    }
+
 
 }

@@ -270,6 +270,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0899a7140dd5ce4992993fd1996c714, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hurtSound: {fileID: 8300000, guid: 6751420d05f891248a51cf501fa04106, type: 3}
   capCollider: {fileID: 8088336360799473229}
   movementSpeed: 2
   groundCheck: {fileID: 825394621}

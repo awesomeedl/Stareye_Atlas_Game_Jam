@@ -99,6 +99,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b11729f3a0640c479d002df0cead4c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hurtSound: {fileID: 8300000, guid: 6751420d05f891248a51cf501fa04106, type: 3}
   waypoints:
   - {fileID: 0}
   - {fileID: 0}

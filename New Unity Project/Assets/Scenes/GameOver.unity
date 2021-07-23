@@ -624,7 +624,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1589902793}
         m_TargetAssemblyTypeName: Buttons, Assembly-CSharp
-        m_MethodName: LoadStart
+        m_MethodName: Retry
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

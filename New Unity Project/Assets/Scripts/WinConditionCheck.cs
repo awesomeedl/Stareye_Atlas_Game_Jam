@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class WinConditionCheck : MonoBehaviour
 {
-    private BoxCollider2D boxCollider2D;
+    BoxCollider2D boxCollider2D;
 
     private Child[] allChild;
     // Start is called before the first frame update
@@ -19,12 +19,14 @@ public class WinConditionCheck : MonoBehaviour
     {
         if(CheckWin())
         {
-            GetComponent<SpriteRenderer>().color = new Color(0f, 1f, 0f, 0.3f);
+            StartCoroutine(DelayLoadNext());
         }
-        else
-        {
-            GetComponent<SpriteRenderer>().color = new Color(1f, 0f, 0f, 0.3f);
-        }
+    }
+
+    IEnumerator DelayLoadNext()
+    {
+        yield return new WaitForSeconds(2);
+        SceneLoader.instance.LoadNextLevel();
     }
 
     bool CheckWin()

@@ -20,6 +20,7 @@ public class BotCollider : MonoBehaviour
     {
         if(collider2d.gameObject.layer == 7 || collider2d.gameObject.layer == 8)
         {
+            Debug.Log("Boundry triggerd gameover");
             SceneLoader.instance.LoadGameOver();
         }
     }
