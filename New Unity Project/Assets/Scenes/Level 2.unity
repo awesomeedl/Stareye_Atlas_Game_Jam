@@ -1614,6 +1614,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2187513975795035584, guid: c5bc2f01a372f2f478f407c439d0cf14, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1168645521}
+    - target: {fileID: 2187513975795035584, guid: c5bc2f01a372f2f478f407c439d0cf14, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: DisplayNextSentence
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c5bc2f01a372f2f478f407c439d0cf14, type: 3}
 --- !u!224 &526047601 stripped
