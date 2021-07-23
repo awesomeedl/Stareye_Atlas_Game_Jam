@@ -8379,35 +8379,35 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     icons:
+    - {fileID: 21300000, guid: 4fecc5f7dc61a9a49a15154a8f70d005, type: 3}
+    - {fileID: 21300000, guid: 80afe52afc9eead4989751454871a361, type: 3}
+    - {fileID: 21300000, guid: 4fecc5f7dc61a9a49a15154a8f70d005, type: 3}
+    - {fileID: 21300000, guid: 80afe52afc9eead4989751454871a361, type: 3}
+    - {fileID: 21300000, guid: 4fecc5f7dc61a9a49a15154a8f70d005, type: 3}
+    - {fileID: 21300000, guid: 4fecc5f7dc61a9a49a15154a8f70d005, type: 3}
     - {fileID: 21300000, guid: 80afe52afc9eead4989751454871a361, type: 3}
     - {fileID: 21300000, guid: 80afe52afc9eead4989751454871a361, type: 3}
+    - {fileID: 21300000, guid: 4fecc5f7dc61a9a49a15154a8f70d005, type: 3}
     - {fileID: 21300000, guid: 80afe52afc9eead4989751454871a361, type: 3}
     - {fileID: 21300000, guid: 80afe52afc9eead4989751454871a361, type: 3}
+    - {fileID: 21300000, guid: 4fecc5f7dc61a9a49a15154a8f70d005, type: 3}
+    - {fileID: 21300000, guid: 80afe52afc9eead4989751454871a361, type: 3}
+    - {fileID: 21300000, guid: 4fecc5f7dc61a9a49a15154a8f70d005, type: 3}
+    - {fileID: 21300000, guid: 4fecc5f7dc61a9a49a15154a8f70d005, type: 3}
+    - {fileID: 21300000, guid: cfd4e90f9efe0624b9ee39b977051ac8, type: 3}
     - {fileID: 21300000, guid: 80afe52afc9eead4989751454871a361, type: 3}
     - {fileID: 21300000, guid: 80afe52afc9eead4989751454871a361, type: 3}
+    - {fileID: 21300000, guid: 6add573693193e445be3dd5946ae954e, type: 3}
     - {fileID: 21300000, guid: 80afe52afc9eead4989751454871a361, type: 3}
+    - {fileID: 21300000, guid: 71e21f22c77b6674fa85f0230afcf42a, type: 3}
     - {fileID: 21300000, guid: 80afe52afc9eead4989751454871a361, type: 3}
+    - {fileID: 21300000, guid: 010f3b3086c9a5048ae2f436d9df3c2a, type: 3}
     - {fileID: 21300000, guid: 80afe52afc9eead4989751454871a361, type: 3}
-    - {fileID: 21300000, guid: 80afe52afc9eead4989751454871a361, type: 3}
-    - {fileID: 21300000, guid: 80afe52afc9eead4989751454871a361, type: 3}
-    - {fileID: 21300000, guid: 80afe52afc9eead4989751454871a361, type: 3}
-    - {fileID: 21300000, guid: 80afe52afc9eead4989751454871a361, type: 3}
-    - {fileID: 21300000, guid: 80afe52afc9eead4989751454871a361, type: 3}
-    - {fileID: 21300000, guid: 80afe52afc9eead4989751454871a361, type: 3}
-    - {fileID: 21300000, guid: 80afe52afc9eead4989751454871a361, type: 3}
-    - {fileID: 21300000, guid: 80afe52afc9eead4989751454871a361, type: 3}
-    - {fileID: 21300000, guid: 80afe52afc9eead4989751454871a361, type: 3}
-    - {fileID: 21300000, guid: 80afe52afc9eead4989751454871a361, type: 3}
-    - {fileID: 21300000, guid: 80afe52afc9eead4989751454871a361, type: 3}
-    - {fileID: 21300000, guid: 80afe52afc9eead4989751454871a361, type: 3}
-    - {fileID: 21300000, guid: 80afe52afc9eead4989751454871a361, type: 3}
-    - {fileID: 21300000, guid: 80afe52afc9eead4989751454871a361, type: 3}
-    - {fileID: 21300000, guid: 80afe52afc9eead4989751454871a361, type: 3}
-    - {fileID: 21300000, guid: 80afe52afc9eead4989751454871a361, type: 3}
-    - {fileID: 21300000, guid: 80afe52afc9eead4989751454871a361, type: 3}
-    - {fileID: 21300000, guid: 80afe52afc9eead4989751454871a361, type: 3}
-    - {fileID: 21300000, guid: 80afe52afc9eead4989751454871a361, type: 3}
-    - {fileID: 21300000, guid: 80afe52afc9eead4989751454871a361, type: 3}
+    - {fileID: 21300000, guid: 114202d1932a523429e1c27bbdda7f4b, type: 3}
+    - {fileID: 21300000, guid: 114202d1932a523429e1c27bbdda7f4b, type: 3}
+    - {fileID: 21300000, guid: 114202d1932a523429e1c27bbdda7f4b, type: 3}
+    - {fileID: 21300000, guid: 114202d1932a523429e1c27bbdda7f4b, type: 3}
+    - {fileID: 21300000, guid: 114202d1932a523429e1c27bbdda7f4b, type: 3}
     sentences:
     - 'What do you think?
 
@@ -8422,7 +8422,7 @@ MonoBehaviour:
     - Thank you so much for your kindness, but...
     - Call me Gram Gram would you? Now eat.
     - "Oh\u2026okay\u2026\r\n"
-    - (What!? These things actually taste so good)
+    - (What!? These things actually taste so good!)
     - "You ain\u2019t learning if you ain\u2019t trying."
     - .
     - Not every time can you see a sunset when you climb up here.
