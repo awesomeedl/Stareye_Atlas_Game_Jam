@@ -3072,6 +3072,89 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1910892188370960628, guid: 71085af4dcc9a7b44afd2a91ef806cba, type: 3}
   m_PrefabInstance: {fileID: 735547319}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &738177091
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 463588606470542705, guid: 121669ecbc9c7e94e888a4125d863397, type: 3}
+      propertyPath: m_Name
+      value: Dialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 463588606470542706, guid: 121669ecbc9c7e94e888a4125d863397, type: 3}
+      propertyPath: m_RootOrder
+      value: 23
+      objectReference: {fileID: 0}
+    - target: {fileID: 463588606470542706, guid: 121669ecbc9c7e94e888a4125d863397, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 393.58792
+      objectReference: {fileID: 0}
+    - target: {fileID: 463588606470542706, guid: 121669ecbc9c7e94e888a4125d863397, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 357.1107
+      objectReference: {fileID: 0}
+    - target: {fileID: 463588606470542706, guid: 121669ecbc9c7e94e888a4125d863397, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -110.597145
+      objectReference: {fileID: 0}
+    - target: {fileID: 463588606470542706, guid: 121669ecbc9c7e94e888a4125d863397, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 463588606470542706, guid: 121669ecbc9c7e94e888a4125d863397, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 463588606470542706, guid: 121669ecbc9c7e94e888a4125d863397, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 463588606470542706, guid: 121669ecbc9c7e94e888a4125d863397, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 463588606470542706, guid: 121669ecbc9c7e94e888a4125d863397, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 463588606470542706, guid: 121669ecbc9c7e94e888a4125d863397, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 463588606470542706, guid: 121669ecbc9c7e94e888a4125d863397, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 463588606470542707, guid: 121669ecbc9c7e94e888a4125d863397, type: 3}
+      propertyPath: dialogue.icons.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 463588606470542707, guid: 121669ecbc9c7e94e888a4125d863397, type: 3}
+      propertyPath: dialogue.icons.Array.data[0]
+      value: 
+      objectReference: {fileID: 21300000, guid: 80afe52afc9eead4989751454871a361, type: 3}
+    - target: {fileID: 463588606470542707, guid: 121669ecbc9c7e94e888a4125d863397, type: 3}
+      propertyPath: dialogue.icons.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300000, guid: 80afe52afc9eead4989751454871a361, type: 3}
+    - target: {fileID: 463588606470542707, guid: 121669ecbc9c7e94e888a4125d863397, type: 3}
+      propertyPath: dialogue.sentences.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 463588606470542707, guid: 121669ecbc9c7e94e888a4125d863397, type: 3}
+      propertyPath: dialogue.sentences.Array.data[0]
+      value: 'What''s on the wall?
+
+        Maybe I should take a look at it.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 463588606470542707, guid: 121669ecbc9c7e94e888a4125d863397, type: 3}
+      propertyPath: dialogue.sentences.Array.data[1]
+      value: Hold on, something doesn't feel right...
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 121669ecbc9c7e94e888a4125d863397, type: 3}
 --- !u!4 &747073657 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1910892188370960628, guid: 71085af4dcc9a7b44afd2a91ef806cba, type: 3}

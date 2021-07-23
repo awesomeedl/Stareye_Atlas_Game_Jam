@@ -26,14 +26,6 @@ public class Player : MonoBehaviour
         health = GetComponent<Health>();
         rb2d = GetComponent<Rigidbody2D>(); 
         boxCollider2D = transform.GetComponent<BoxCollider2D>();
-
-        StartCoroutine(BeginningDialogue());
-    }
-
-    IEnumerator BeginningDialogue()
-    {
-        yield return null;
-        GetComponent<DialogueTrigger>().TriggerDialogue();
     }
     
     // Update is called once per frame
